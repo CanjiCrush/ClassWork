@@ -1,0 +1,48 @@
+【程式開發練習1】 
+
+費氏數列
+=================
+[C]
+
+# include <stdlib.h>
+# include <stdio.h>
+int fib(int n){
+
+    if(n==0)
+        return 0;
+
+    if(n==1)
+        return 1;
+
+    return (fib(n-1)+fib(n-2));
+
+}
+
+int main(){
+
+    int input, i;
+
+    while(1){
+
+        printf("輸入一數字:\n");
+        scanf("%d", &input);
+        printf("\n");
+
+        if(input<0)
+            printf("\nInput cannot less than 0\n\n");
+
+        else{
+            for(i=0; i<=input; i++)
+                printf("%d  ", fib(i));
+        }
+
+        printf("\n\n");
+
+        system("PAUSE");
+        system("CLS");
+
+    }
+
+    return 0;
+
+}
