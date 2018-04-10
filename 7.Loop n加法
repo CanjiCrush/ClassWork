@@ -1,0 +1,19 @@
+【程式開發練習1】F(N)=1+2+3+.....+N
+=N+(N-1)+......+1
+F(N)=N+F(N-1) 
+F(1)=1
+====================================
+[C]
+
+#include <stdio.h>
+#include<stdlib.h>
+int main (){
+printf("請輸入一個數：");
+int n ,a=1;
+scanf("%d",&n);
+for (int i=2;i<=n;i++)
+a+=i;
+printf("該數N!為：%d\n",a);
+system("pause");
+return 0;
+}
