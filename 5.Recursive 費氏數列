@@ -38,8 +38,8 @@ int main(){
 
         printf("\n\n");
 
-        system("PAUSE");
-        system("CLS");
+        system("pause");
+        system("cls");
 
     }
 
